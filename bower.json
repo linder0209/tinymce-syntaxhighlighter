@@ -1,0 +1,27 @@
+{
+  "name": "tinymce-syntaxhighlighter",
+  "version": "0.0.1",
+  "authors": [
+    "linder0209 <linder0209@126.com>"
+  ],
+  "description": "This is a TinyMCE plugin base on SyntaxHighlighter.",
+  "main": "plugin.js",
+  "keywords": [
+    "TinyMCE",
+    "SyntaxHighlighter",
+    "plugin"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/linder0209/tinymce-syntaxhighlighter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tinymce": ">= 4.1.0",
+	"SyntaxHighlighter": ">= 3.0.83"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tinymce Syntaxhighlighter Demo</title>
+  <style>
+    .container{
+      width: 900px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <textarea id="content"></textarea>
+</div>
+<!-- TinyMCE -->
+<script src="../bower_components/tinymce/tinymce.js"></script>
+<script src="../plugin.js"></script>
+<script src="./langs/zh_CN.js"></script>
+<script src="../langs/zh_CN.js"></script>
+<script>
+  var editor = new tinymce.Editor('content', {
+    height: 400,
+    menubar: false, //Disable all menu
+    content_css: './styles/tinymce.css',
+    syntaxhighlighter_image_url: '../',
+    plugins: [
+      'autolink link image preview hr code fullscreen table textcolor charmap syntaxhighlighter'
+    ],
+    toolbar: 'undo redo | bold italic underline strikethrough subscript superscript | styleselect | fontselect fontsizeselect formatselect ' + '| forecolor backcolor removeformat | bullist numlist outdent indent blockquote | alignleft aligncenter alignright alignjustify | ' + 'hr image link unlink | charmap table code preview fullscreen | syntaxhighlighter'
+  }, tinymce.EditorManager);
+  editor.render();
+</script>
+</body>
+</html>
