@@ -194,19 +194,16 @@ tinymce.PluginManager.add('syntaxhighlighter', function (editor, url) {
     });
   }
 
-  // FIXME 此处url应该取该文件所在的url，待实现
-  var imageUrl = editor.settings.syntaxhighlighter_image_url || './';
-
   editor.addCommand('mceSyntaxhighlighterEditor', showDialog);
 
   editor.addButton('syntaxhighlighter', {
-    image : imageUrl + 'images/highlight.png',
+    icon: 'insertcode',
     tooltip: 'Insert Code',
     onclick: showDialog
   });
 
   editor.addMenuItem('syntaxhighlighter', {
-    image : imageUrl + 'images/highlight.png',
+    icon: 'insertcode',
     tooltip: 'Insert Code',
     context: 'tools',
     onclick: showDialog
