@@ -21,7 +21,7 @@
     "tests"
   ],
   "dependencies": {
-    "tinymce": ">= 4.1.0",
+    "tinymce": ">= 4.1.4",
 	"SyntaxHighlighter": ">= 3.0.83"
   }
 }
