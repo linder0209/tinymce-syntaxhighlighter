@@ -188,7 +188,7 @@ tinymce.PluginManager.add('syntaxhighlighter', function (editor, url) {
         var content = '<pre class="' + config + '">';
         content += editor.dom.encode(e.data.code);
         content += '</pre>';
-        content = '<p>&nbsp;</p>' + content;
+        content = '<p>&nbsp;</p>' + content + '<p>&nbsp;</p>';
         editor.execCommand('mceInsertContent', false, content);
       }
     });
