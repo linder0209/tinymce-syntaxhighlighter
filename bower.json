@@ -18,7 +18,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "VERSION.md"
   ],
   "dependencies": {
     "tinymce": ">= 4.1.4",
