@@ -1,6 +1,6 @@
 {
   "name": "tinymce-syntaxhighlighter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "authors": [
     "linder0209 <linder0209@126.com>"
   ],
@@ -22,7 +22,7 @@
     "VERSION.md"
   ],
   "dependencies": {
-    "tinymce": ">= 4.1.4",
+    "tinymce": ">= 4.1.10",
 	"SyntaxHighlighter": ">= 3.0.83"
   }
 }
